@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:practice_flutter/detail_page.dart';
-import 'package:practice_flutter/home_page.dart';
-import 'package:practice_flutter/items_page.dart';
-import 'package:practice_flutter/practice_work/shade_preference.dart';
+import 'package:practice_flutter/practice_work/calculator_practice.dart';
+import 'package:practice_flutter/practice_work/login_page_practice.dart';
+import 'package:practice_flutter/practice_work/lotryapp.dart';
+import 'package:practice_flutter/practice_work/whatsapp_practice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +20,15 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
-          return const MaterialApp(
+          return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: "Practice App",
-            home: MyPage(),
+            home: MyCalculator(),
+            // initialRoute: LotteryApp.id,
+            // routes: {
+            //   LotteryApp.id : (context)=> LotteryApp(),
+            //   LoginMyApp.id : (context) => LoginMyApp(),
+            // },
           );
         });
   }

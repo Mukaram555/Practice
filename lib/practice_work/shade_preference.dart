@@ -15,9 +15,11 @@ class MyPage extends StatefulWidget {
 class _MyPageState extends State<MyPage> {
 
   @override
-  void initState(){
+  void initState() async {
     super.initState();
     Timer(Duration(seconds: 4),()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>SharedPreferencesDemo(),),),);
+    SharedPreferences sp = await SharedPreferences.getInstance();
+    
   }
   @override
   Widget build(BuildContext context) {

@@ -151,8 +151,9 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   "All",
                                   style: TextStyle(
-                                    color: Colors.pink.shade300,
+                                    color: Color(0xffFF69B4),
                                     fontSize: 14.sp,
+                                    fontFamily: 'Pacifico',
                                   ),
                                 ),
                               ],
